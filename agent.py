@@ -51,9 +51,7 @@ class LifescienceAgent():
             verbose=True,
             max_iterations=self.max_iter
             )
-        rephrase = PromptTemplate(
-                input_variables=["question", "agent_ans"], template=REPHRASE_TEMPLATE
-            )
+      
 
     def run(self,query):
         """
